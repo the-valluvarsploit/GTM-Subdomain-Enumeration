@@ -16,8 +16,8 @@ $ cat urls.txt | xargs -I{} sh -c "python3 gtm.py -u {}"
 # Demo
 ![Demo](https://github.com/the-valluvarsploit/GTM-Subdomain-Enumeration/blob/main/demo.png)
 
-# Contact Us
-Want to learn Bug Bounty Hunting?
-Whatsapp: https://wa.me/message/ZEIGQZ7VNGTNC1
+# Contact Us  
+Want to learn Bug Bounty Hunting?  
+Whatsapp: https://wa.me/message/ZEIGQZ7VNGTNC1  
 LinkedIn: https://www.linkedin.com/in/alexandar-t-345230220
 
