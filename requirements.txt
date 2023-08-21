@@ -1,4 +1,3 @@
 argparse
-re
 requests
 urllib3
