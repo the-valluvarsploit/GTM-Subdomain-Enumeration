@@ -91,15 +91,21 @@ def main():
     if url and gtm_id:
         temp_subdomains = fetch_subdomains(url, gtm_id, timeOut)
         subdomains = remove_duplicates(temp_subdomains)
-        for subs in subdomains:
-            print(f"{green}{subs}{reset}")
+        if len(subdomains) > 0:
+            for subs in subdomains:
+                print(f"Subdomain: {green}{subs}{reset}")
+        else:
+            print("[-] No subdomain found")
     else:
         gtm_id = fetch_gtm_id(url, timeOut)
         if gtm_id is not None:
             temp_subdomains = fetch_subdomains(url, gtm_id, timeOut)
             subdomains = remove_duplicates(temp_subdomains)
-            for subs in subdomains:
-                print(f"{green}{subs}{reset}")
+            if len(subdomains) > 0:
+                for subs in subdomains:
+                    print(f"Subdomain: {green}{subs}{reset}")
+            else:
+                print("[-] No subdomain found")
 
 if __name__ == "__main__":
     main()
